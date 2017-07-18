@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    
+    <title>How Many Fingers Guess Game</title>
+    </head>
+
+<body>
+    
+    <h2>How Many Fingers Am I Holding Up!!!!! </h2>
+    
+    <h3> <input type="text" id="guess"> <button id="submit"  onclick="answer()">Check</button></h3>
+    
+    <script>
+    
+    function answer()
+        {
+            var text=document.getElementById("guess").value;
+            
+            
+            var number=Math.random();
+            number=number*5;
+            number=Math.floor(number);
+            
+            if(text==number)
+                {
+                    alert("Well Done You Got It !!!!!!!!!!!!!");
+                }
+            else
+                {
+                    alert("Sorry I'm Holding "+number +" Fingers");
+                }
+        }
+    
+    </script>
+    <style>
+    
+        h2{
+            text-align: center;
+            color: red;
+            
+            padding-top: 100px;
+        }
+        
+        body{
+            background-color: aquamarine;
+        }
+        h3{
+            text-align: center;
+            padding-top: 10px;
+        }
+    
+    </style>
+    
+    </body>
+
+
+</html>
